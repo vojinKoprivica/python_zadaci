@@ -1,5 +1,7 @@
 #drugi zadatak
 
+#####    NEZAVRSENO!!!
+
 print(50*"-")
 
 
