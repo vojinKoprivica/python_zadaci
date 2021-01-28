@@ -71,8 +71,8 @@ print(50*"-")
 # U slučaju neispravnog unosa ispisati poruku o grešci.
 
 print("_______Moje resenje________")
-n = input("Unesite prvi broj: ")
-m = input("Unesite drugi broj: ")
+n = int(input("Unesite prvi broj: "))
+m = int(input("Unesite drugi broj: "))
 #
 # if  n <= m and (n.isdigit() and m.isdigit()):
 #     n = int(n)
@@ -82,18 +82,26 @@ m = input("Unesite drugi broj: ")
 # else:
 #     print("neispravan unos")
 
-while n<m :
-    if n.isdigit() and m.isdigit():
-        print(n,m)
-            break
-    else:
-        print("Unos mora biti broj!")
+##### While #####
+print("\n")
 
-print("Prvi broj mora biti manji od drugog")
-
-
+# if n>=m:
+#     print("Prvi broj mora biti manji od drugog")
+# else:
+#     priv_prom = n
+#     while priv_prom <= m:
+#         print(priv_prom)
+#         priv_prom += 1
 
 # print("_______Radionica________")
+if n>m: print("Prvi broj mora biti veci od drugog")
+lista = []
+
+while n <= m:
+    lista.append(str(n))
+    if n == m:
+        print(" ".join(lista))
+    n += 1
 
 
 
